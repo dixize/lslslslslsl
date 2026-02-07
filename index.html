@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ростелеком | Отраслевые решения</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="main-page">
+        <section class="hero">
+            <div class="hero-bg"></div>
+            <div class="container">
+                <div class="header-top">
+                    <img src="logo.png" alt="Ростелеком" class="logo">
+                </div>
+                <h1>Отраслевые решения ПАО «Ростелеком»</h1>
+                
+                <div class="nav-menu">
+                    <button class="menu-item" onclick="showSlide('robotics')">
+                        <span class="num">01</span>
+                        <span class="label">Роботизация производства</span>
+                    </button>
+                    <button class="menu-item" onclick="showSlide('quality')">
+                        <span class="num">02</span>
+                        <span class="label">Контроль качества</span>
+                    </button>
+                    <button class="menu-item" onclick="showSlide('security')">
+                        <span class="num">03</span>
+                        <span class="label">Средства охраны</span>
+                    </button>
+                    <button class="menu-item" onclick="showSlide('eco')">
+                        <span class="num">04</span>
+                        <span class="label">Экомониторинг</span>
+                    </button>
+                    <button class="menu-item" onclick="showSlide('equipment')">
+                        <span class="num">05</span>
+                        <span class="label">Тех. оборудование</span>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <section class="terra-section">
+            <div class="container">
+                <h2>Проектный офис «Терра»</h2>
+                <div class="terra-intro">
+                    <p>Мы создаем цифровой фундамент для технологического лидерства вашего бизнеса. Проектный офис сопровождает заказчика на всех этапах цифровой трансформации.</p>
+                </div>
+                
+                <div class="terra-features">
+                    <div class="feat-card">
+                        <h3>Комплексный подход</h3>
+                        <p>От аудита предприятия до внедрения тяжелых ИТ-решений и сервисного обслуживания.</p>
+                    </div>
+                    <div class="feat-card">
+                        <h3>Импортозамещение</h3>
+                        <p>Приоритет на российское ПО и оборудование в рамках национальных проектов (ФЗ-187, импортозамещение критической инфраструктуры).</p>
+                    </div>
+                    <div class="feat-card">
+                        <h3>Масштабируемость</h3>
+                        <p>Решения одинаково эффективно работают как на малых производственных площадках, так и на объектах федерального значения.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <div id="slide-container" class="hidden">
+        <button class="btn-back" onclick="hideSlide()">← Вернуться в меню</button>
+        <div id="slide-content"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
